@@ -11,39 +11,43 @@
 <body>
     <header>
         <h1>BORN TECHNICAL SCHOOL</h1>
-        <nav>
-            <a href="home">Home</a>
+        <nav id="nav">
+        
+            <a href="index.html">Home</a>
             <a href="about us">About us</a>
             <a href="Courses">Courses</a>
             <a href="contant">Contants</a>
+            
+            
         </nav>
-    </header>
-    <section>
+    </header >
+    <section class="hero">
         <h1>Welcome to Born technical school</h1>
         <p>"Empowering future innovators with practical skills for tomorrow’s technical world."</p>
+        <a class="btn" href="#register">register a student</a>
     </section>
     <main>
-        <h2>Dashboard</h2>
-        <div>
-            <div>
+        <h2 class="dashboard">DASHBOARD</h2>
+        <div class="grid stats">
+            <div class="card">
                 <h3>0</h3>
                 <p>Total students</p>
             </div>
-            <div>
+            <div class="card">
                 <h3>0</h3>
                 <p>Passed</p>
             </div>
-            <div>
-                <h3>0</h3>
+            <div class="card">
+                <h3> 0 </h3>
                 <p>Failed</p>
             </div>
-            <div>
+            <div class="card">
                 <h3>0</h3>
                 <p>Average marks</p>
             </div>
         </div>
-        <h2>Register a student</h2>
-        <form>
+        <h2 id="register">REGISTER A STUDENT</h2>
+        <form id="studentform" class="">
             <label for="full name">Full Name</label>
             <input type="text" placeholder="Full name">
 
@@ -51,7 +55,7 @@
             <input type="number" placeholder="Age">
 
             <label for="gender">Gender</label>
-            <select name="gender" id="">
+            <select name="gender" id="gender">
                 <option value="" disabled selected>select</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -59,7 +63,7 @@
             </select>
 
             <label for="course">course</label>
-            <select name="course" id="">
+            <select name="course" id="course">
                 <option value="" disabled selected>select</option>
                 <option value="software development">software development</option>
                 <option value="web development">web development</option>
@@ -68,18 +72,18 @@
                 <option value="networking">networking</option>
                 <option value="computer packages">computer packages</option>
             </select>
-            <label for="marks">Marks (0-100)</label>
-            <input type="number">
+            <label for="marks" >Marks (0-100)</label>
+            <input type="number" id="marks">
 
-            <button type="submit">Register</button>
+            <button class="btn" type="submit">Register</button>
             <p id="formMessage"></p>
 
         </form>
 
         <h2>Students records</h2>
-        <input type="text" placeholder="Search by name.....">
+        <input id=search type="text" placeholder="Search by name.....">
 
-        <div>
+        <div class="scroll">
             <table>
                 <thead>
                     <tr>
@@ -91,14 +95,14 @@
                         <th>Status</th>
                     </tr>
                 </thead>
-                <tbody> </tbody>
+                <tbody id="tablebody"> </tbody>
             </table>
         </div>
 
-        <p> </p>
+        <p id="searchMessage" class="error"> </p>
 
         <h2>Performance history</h2>
-        <div></div>
+        <div id="summary" class="grid stats"></div>
 
 
     </main>
